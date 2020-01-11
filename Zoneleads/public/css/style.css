@@ -1,0 +1,259 @@
+body {
+  overflow-x: hidden;
+  background-color: #f5f3f5;
+  height: 100%;
+  width:100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*##############################################navbar############################*/
+
+.navbar {
+  border-top: 6px solid #fb0b57;
+  background-color: #242a33;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navbar .navbar-brand {
+  display: block;
+  background-color: #fb0b57;
+  padding: 15px 40px;
+  font-weight:bold;
+  color: #f5f3f5;
+}
+
+.navbar .nav-link {
+  color: #fb0b57;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+.navbar .nav-link:hover {
+  color: #f5f3f5;
+  background-color: #fb0b57;
+}
+
+.navbar-toggler{
+  background:url('/img/hamburger');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.navbar-brand img{
+  padding:0;
+  width:70px;
+  height:40px;
+}
+/*##################################################viewport######################*/
+
+.viewport-80 {
+  min-height: 80vh;
+}
+
+/*###############################Home main diaplay section###################################*/
+
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+  url('/img/display4');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(36, 42, 51);
+  z-index: -1;
+  bottom: 0;
+}
+
+#banner .banner-title {
+ color:#fb0b57 !important;
+}
+
+#banner h2{
+  color:white;
+}
+
+#banner .banner-link, .banner-link2 {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 25px;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 0;
+  color: white;
+}
+
+#banner .banner-link:hover {
+  border: 2px solid #fb0b57;
+  background-color: #fb0b57;
+}
+
+#banner .banner-link2:hover {
+  color: white;
+  border: 2px solid #0f70ac;
+  background-color: #0f70ac;
+}
+
+.display-2{
+  font-size:90px;
+}
+
+.display-3{
+  font-size:35px;
+
+}
+
+
+
+.main-home-icon{
+  font-size:60px;
+}
+/*#############################banner icons################################*/
+
+.title .fa {
+  font-size: 60px;
+  color: #f15025;
+}
+
+.title .title-text {
+  padding-left: 15px;
+  border-left: 3px solid #ced0ce;
+}
+
+/*############################services#########################################*/
+#services{
+    margin-top:50px;
+}
+
+.service-title{
+   align:left;
+}
+
+#service-icon1{
+    background-image: url('/img/leadGeneration.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#service-icon2{
+    background-image: url('/img/comprehensivePlatform.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#service-icon3{
+    background-image: url('/img/landingPage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#service-icon4{
+    background-image: url('/img/SocialMediaAds.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*############################About page#########################################*/
+#about-page{
+  margin-top:90px;
+}
+/*############################Contact page#########################################*/
+
+#contact-form{
+  margin-top:35px;
+}
+
+#contact{
+  margin-top:90px;
+}
+
+#contact textarea{
+  height:150px;
+}
+
+#contact button{
+  color:white;
+  background-color: #fb0b57;
+  border:none;
+  height:40px;
+  cursor:pointer;
+}
+
+#contact button{
+  transition:0.5s;
+}
+
+#contact button:hover{
+  color:white;
+  background-color: #0f70ac;
+  transition:0.5s;
+}
+
+/*############################Terms and Conditions#########################################*/
+#terms-and-conditions{
+    margin-top:80px;
+}
+
+
+/*############################Privacy POlicy#########################################*/
+#privacy-policy{
+    margin-top:80px;
+}
+
+/*############################Footer section#########################################*/
+
+footer{
+  background-color: #242a33;
+  color:white;
+  margin-top:4rem;
+}
+
+footer button{
+  color:white;
+  background-color: #fb0b57;
+  border:none;
+  height:40px;
+  cursor:pointer;
+  width:25%;
+}
+
+#footer-email{
+  width:75%;
+}
+
+footer button:hover{
+  color:white;
+  background-color: #0f70ac;
+  transition:0.5s;
+}
+
+footer button{
+  transition:0.5s;
+}
+
+.footer-icons i{
+  transition:1s;
+}
+
+.footer-icons i:hover{
+  font-size:22px;
+  transition:0.6s;
+}
+
+.footer-link p a:hover{
+  text-decoration: underline;
+}

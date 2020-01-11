@@ -1,0 +1,26 @@
+body {
+    background-color: #3B3738 !important;
+    color:white !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+ font-weight:bold;
+}
+
+#book{
+  width: 80%;
+  margin: 0 auto;
+  float: none;
+  padding:10px;
+  color:black;
+  background-color: orange !important;
+}
+
+#result{
+  color:white;
+  text-align:center;
+}
+
+#textDiv{
+    text-align:center;
+}

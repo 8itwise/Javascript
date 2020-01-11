@@ -1,0 +1,61 @@
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<section id="contact" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="font-weight-bold">Hello. How can we help?</h1>
+        <p class="text-muted">We’re always happy to help at ZoneLeads. Whether you’ve got a question about our services, or you simply have a suggestion, please feel free to get in touch. Our friendly agents are availabe to help.</p>
+      </div>
+    </div>
+  </div>
+
+<form id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required="true">
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" class="form-control" placeholder="Email Address" required="true">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="companyName" class="form-control"  placeholder="Company Name" required="true">
+        </div>
+
+        <div class="form-group">
+          <input type="text"  id="typeOfCompany" class="form-control"  placeholder="Type Of Business" required="true">
+        </div>
+    </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" id="subject" class="form-control" placeholder="Subject" required="true">
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" id="message" rows="3" placeholder="Type your messsage here..." required="true"></textarea>
+          </div>
+
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember" id="remember"> I have read and agree to the <a href="/terms_and_conditions">Terms & Conditions</a> and <a href="/privacy_policy">Privacy Policy</a>.</label>
+          <hr>
+          <small class="text-muted">By submitting this contact form you are giving us permission to email you about your questions or requests. Your information and email will not be distributed or sold.</small>
+        </div>
+
+          <button type="submit" class="col-md-12 mt-2 mb-2">Get in touch</button>
+
+          <p class="mt-2" id="display-msg"></p>
+
+        </div>
+      </div>
+    </div>
+</form>
+</section>
+
+
+<script type="text/javascript" src="js/client_handler.js"> </script>

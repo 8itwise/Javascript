@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Booking System</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   </head>
+
+   <body>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">Ada Booking Systsem</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="find_delete.html">Find/Delete Booking</a></li>
+               <li class="active"><a href="editBooking.html">Edit Booking</a></li>
+               <li><a href="bookingInfo.html">View Bookings</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="container col-md-10" id="book">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">Booking ID</label>
+            <input type="text" class="form-control" id="boookingId" placeholder="Booking ID">
+          </div>
+
+        <div class="form-group col-md-12">
+            <label for="inputState">Old Data</label>
+            <select class="form-control" id="value_list">
+              <option value="1">Firstname</option>
+              <option value="2">Surname</option>
+              <option value="3">Status</option>
+              <option value="4">Reason for booking</option>
+              <option value="5">Date of use</option>
+              <option value="6">Room</option>
+              <option value="7">Period</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label for="inputEmail4">New Data</label>
+            <input type="text" class="form-control" id="newData" placeholder="New Data">
+          </div>
+
+          <span id="msg" style="text-align:center;"></span>
+
+        <button class="btn btn-primary center-block" onclick="editBooking(); return false;">Make Changes</button>
+      </div>
+
+      <p id="result"> </p>
+      <p id="textDiv"> </p>
+
+    </div>
+
+     <script src="js/bs.js"></script>
+     <script src="js/bs.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Booking System</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bs.js"></script>
+   </head>
+
+   <body onload="viewBooking()">
+
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">Ada Booking Systsem</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="find_delete.html">Find/Delete Booking</a></li>
+              <li><a href="editBooking.html">Edit Booking</a></li>
+              <li class="active"><a href="bookingInfo.html">View Bookings</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="container">
+        <h2>Booking Dates</h2>
+        <table class="table table-bordered" id="table">
+          <thead>
+            <tr>
+              <th>Booking Id</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Status</th>
+              <th>Reason for booking</th>
+              <th>Date of use</th>
+              <th>Room</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+        </table>
+
+        <div id="bookingTable">
+        </div>
+      </div>
+
+   </body>
+</html>

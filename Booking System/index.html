@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Booking System</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="sctylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   </head>
+
+   <body>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" href="index.html">Ada Booking Systsem</a>
+            </div>
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="index.html">Home</a></li>
+               <li><a href="find_delete.html">Find/Delete Booking</a></li>
+                <li><a href="editBooking.html">Edit Bookings</a></li>
+               <li><a href="bookingInfo.html">View Bookings</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="container col-md-10" id="book">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Firstname</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+            <p style="color:red" id="text0"></p>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Surname</label>
+            <input type="text" class="form-control" id="surname" placeholder="Surname">
+            <p style="color:red" id="text1"></p>
+          </div>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="inputAddress2">Status</label>
+          <input type="text" class="form-control" id="status" placeholder="Staff/Student">
+          <p style="color:red" id="text2"></p>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="inputAddress">Reason for booking</label>
+          <input type="text" class="form-control" id="reason" placeholder="Meeting">
+          <p style="color:red" id="text3"></p>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="inputAddress">Date of use</label>
+          <input type="text" class="form-control" id="dateOfUse" placeholder="eg Monday">
+          <p style="color:red" id="text4"></p>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="inputState">Room</label>
+            <select class="form-control" id="room">
+              <option selected>Choose...</option>
+              <option value="1">Sputnik</option>
+              <option value="2">Voyager</option>
+              <option value="3">Endeavour</option>
+              <option value="4">Poineer</option>
+              <option value="5">Galileo</option>
+              <option value="6">Genesis</option>
+              <option value="7">Ace</option>
+              <option value="8">Vega</option>
+            </select>
+            <p style="color:red" id="text5"></p>
+          </div>
+
+        <div class="form-group col-md-6">
+          <label for="inputState">Period</label>
+          <select class="form-control" id="period">
+            <option selected>Choose...</option>
+            <option value="1">Period 1</option>
+            <option value="2">Period 2</option>
+            <option value="3">Period 3</option>
+            <option value="4">Period 4</option>
+            <option value="5">Period 5</option>
+            <option value="6">Period 6</option>
+          </select>
+          <p style="color:red" id="text6"></p>
+        </div>
+
+        <button class="btn btn-primary center-block" onclick="main(); return false;" > Book </button>
+        <p id="textDiv" style="color:red"> </p>
+      </div>
+
+      <p id="result"> </p>
+
+
+     <script src="js/bs.js"></script>
+     <script src="js/bs.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   </body>
+</html>
